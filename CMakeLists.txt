@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-PROJECT(HW1)
+PROJECT(Assignment_1)
 SET(CMAKE_BUILD_TYPE "Release")
 
 if (!MSVC)
@@ -23,8 +23,8 @@ CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/shaders/shader.h.in ${CMAKE_SOURCE_DIR}/shade
 
 include_directories(${CMAKE_SOURCE_DIR}/src
 					${CMAKE_SOURCE_DIR}/shaders)
-add_executable(HW1 WIN32 MACOSX_BUNDLE 
-	source/HW1.cpp 
+add_executable(color WIN32 MACOSX_BUNDLE 
+	source/color.cpp 
 	shaders/fshader.glsl
 	shaders/vshader.glsl
 	source/common/Angel.h
@@ -34,14 +34,14 @@ add_executable(HW1 WIN32 MACOSX_BUNDLE
 #Windows cleanup
 if (MSVC)
     # Tell MSVC to use main instead of WinMain for Windows subsystem executables
-    set_target_properties(HW1 PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
+    set_target_properties(color PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
 endif()
 
 #Apple cleanup
 if (APPLE)
-    set_target_properties(HW1 PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "simple")
+    set_target_properties(color PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "simple")
 	
-    set_target_properties(HW1 PROPERTIES
+    set_target_properties(color PROPERTIES
                           MACOSX_BUNDLE_SHORT_VERSION_STRING ${GLFW_VERSION}
                           MACOSX_BUNDLE_LONG_VERSION_STRING ${GLFW_VERSION_FULL}
     					  MACOSX_BUNDLE_ICON_FILE glfw.icns)

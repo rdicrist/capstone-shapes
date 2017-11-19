@@ -413,7 +413,7 @@ int main(void)
   init(glShaderProgram, triVao, sqVao, rectVao, diVao, parVao);
 
   //set the background/clear color
-  glClearColor(1.0, 1.0, 1.0, 1.0);
+  glClearColor(0.5, 0.5, 0.5, 0.5);
 
   //main loop, loop forever until user closes window
   while (!glfwWindowShouldClose(window)){

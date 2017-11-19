@@ -1,0 +1,1386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		29D82A8855804972BE216F6B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7910E93D12EA41DCB285E8DC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				6C8FCB2344CF4C3D933855C4 /* CMake Rules */,
+			);
+			dependencies = (
+				120A42EF72C3416288D10FDB /* PBXTargetDependency */,
+				6E0A887C0BDB4217ADCC8714 /* PBXTargetDependency */,
+				3E3166E1E9E04C82AB34A0B2 /* PBXTargetDependency */,
+				252FA847FE8245CA84418838 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		864C1B0B382A4184B16298D1 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3761586CA8D24A4ABA68EF61 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				3B4CC10A82D2411B8C29188B /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		180C6B2A9E534EC1A134C4FE /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225045AFD4740B3AE9BD791 /* cocoa_joystick.m */; };
+		2286AB07179D4E48A0E8F267 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CD40FA6A8444C4BB4D7E8B5 /* glad.c */; };
+		22F333BE49434789901BA1A7 /* vulkan.c in Sources */ = {isa = PBXBuildFile; fileRef = 7723CC2EBC8A40DC98A0593B /* vulkan.c */; };
+		749E5EF0B6664D3DAC04C503 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = BB236287A8204E648CF38D22 /* nsgl_context.m */; };
+		79D43E34FCC34B7386FEC785 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C025C735B432EA192FDC5 /* window.c */; };
+		7E28E6CFB8494A56943AF27E /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = FA83D1F1A646458EA2A55E20 /* init.c */; };
+		84C2E81FE9614F4AAA5CB93C /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = E24D30E65148476B9C31175E /* cocoa_init.m */; };
+		8CB348E0292B450CACA4FBD9 /* posix_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE69DE10324AD5B48D6E7F /* posix_tls.c */; };
+		8F25D7660BEB47739C5C518E /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535B89B606B1427FAD05FA89 /* color.cpp */; };
+		C5722406D16D4801A4914752 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = DE774B8339424EEFAFB759BF /* input.c */; };
+		D2AEDE6D6EFF425A80CA8DEB /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E748B42DA44C983477DA2 /* context.c */; };
+		E1F261690FE4437C81E5C26C /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998D52E4CAF4D10AF1EBB8F /* cocoa_window.m */; };
+		E565C25B2045410FAE54EC2D /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D5567333475460AB567493A /* monitor.c */; };
+		F16B1C301D8F4B49B676DE03 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C737373EE374E97A2FEA75F /* cocoa_monitor.m */; };
+		F8DAAB36989A4BBE972172AE /* cocoa_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 95B51A2B0DD24BF59F175F10 /* cocoa_time.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02A5AC9A726D44F885A5A309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C61E86F0C57045E28245C204;
+			remoteInfo = glfw;
+		};
+		20170D8A45A94C97800BCB46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C61E86F0C57045E28245C204;
+			remoteInfo = glfw;
+		};
+		63D39389A01A4F3AB2BE1597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5ADDD4890594B719CEFF4CA;
+			remoteInfo = glad;
+		};
+		8ABFAED0DA854306B9A7C3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A975E7E740A45DE93660751;
+			remoteInfo = color;
+		};
+		939D74659E854CCBA665C4FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C61E86F0C57045E28245C204;
+			remoteInfo = glfw;
+		};
+		9D72F2123BBF4B46BE74B84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 864C1B0B382A4184B16298D1;
+			remoteInfo = ZERO_CHECK;
+		};
+		AAC2E100A58546B1B90672D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 864C1B0B382A4184B16298D1;
+			remoteInfo = ZERO_CHECK;
+		};
+		D36F821E0DEA44B1AE860362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 864C1B0B382A4184B16298D1;
+			remoteInfo = ZERO_CHECK;
+		};
+		E90125012D2B4578AB6F30D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2178C00BAED54605BA24EFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5ADDD4890594B719CEFF4CA;
+			remoteInfo = glad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0225045AFD4740B3AE9BD791 /* cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.2/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		085375041881483DAF7D46BE /* vshader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader.glsl; path = shaders/vshader.glsl; sourceTree = SOURCE_ROOT; };
+		0B3C025C735B432EA192FDC5 /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.2/src/window.c"; sourceTree = SOURCE_ROOT; };
+		0CAE69DE10324AD5B48D6E7F /* posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "glfw-3.2/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
+		1219B2E3EEB848008DD636D0 /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13FABE54834D4D669F97D1F2 /* Angel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Angel.h; path = source/common/Angel.h; sourceTree = SOURCE_ROOT; };
+		16B344406BE844A4BE482A08 /* libglad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9B6F2AE834467FB4E2A295 /* color */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; name = color; path = color.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29FC0CB4691C42F0BB19EFC5 /* cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.2/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		34B4BDE73BA14E0B90848A9E /* fshader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader.glsl; path = shaders/fshader.glsl; sourceTree = SOURCE_ROOT; };
+		35CDAA6B9C91433FA768C49F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		47228512F28D4F37B16B49E2 /* mat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat.h; path = source/common/mat.h; sourceTree = SOURCE_ROOT; };
+		4998D52E4CAF4D10AF1EBB8F /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.2/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		535B89B606B1427FAD05FA89 /* color.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = color.cpp; path = source/color.cpp; sourceTree = SOURCE_ROOT; };
+		56A3255C919F4906B4458392 /* posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "glfw-3.2/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
+		5C737373EE374E97A2FEA75F /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.2/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		61E52A9AE56F43D6A706B584 /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.2/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		6D4A54D6CDE24D3B99376D10 /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.2/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		6D5567333475460AB567493A /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.2/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		6DF69F979D844D7BA234C3B3 /* vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec.h; path = source/common/vec.h; sourceTree = SOURCE_ROOT; };
+		6E42E39A98764429BE069F20 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "glfw-3.2/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		7723CC2EBC8A40DC98A0593B /* vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.2/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		7B3E748B42DA44C983477DA2 /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.2/src/context.c"; sourceTree = SOURCE_ROOT; };
+		876EC02E2CB240088E00E859 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		95B51A2B0DD24BF59F175F10 /* cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.2/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		9CD40FA6A8444C4BB4D7E8B5 /* glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = "glfw-3.2/deps/glad.c"; sourceTree = SOURCE_ROOT; };
+		A6F1FC9E43544FA59214015F /* glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = "glfw-3.2/deps/glad/glad.h"; sourceTree = SOURCE_ROOT; };
+		A92D7280C478452F8E0048D1 /* nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.2/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		B59A8AA30CC6475494545EA2 /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.2/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		BB236287A8204E648CF38D22 /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.2/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		BC3C7CDDC26D4C14A08558ED /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = build/CMakeFiles/color.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		BFA4A2685E5C4B63A9022ED2 /* glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "build/glfw-3.2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		C96792819A6F4103B818909A /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.2/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		CF34B3DD7EE34E659DD44EFA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CF6591CB2BAB41E4AFE2BBA4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DE774B8339424EEFAFB759BF /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.2/src/input.c"; sourceTree = SOURCE_ROOT; };
+		E24D30E65148476B9C31175E /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.2/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		FA83D1F1A646458EA2A55E20 /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.2/src/init.c"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B5BFE560B6649AD98E9F4FF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				13FABE54834D4D669F97D1F2 /* Angel.h */,
+				47228512F28D4F37B16B49E2 /* mat.h */,
+				6DF69F979D844D7BA234C3B3 /* vec.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		0CDEAD4B64A2408681E25A52 = {
+			isa = PBXGroup;
+			children = (
+				6D745A219F2A4CEAAEF25B86 /* color */,
+				2B2BE470959F467582F2E007 /* glad */,
+				8B23C2BF56FE4AFCA43CC4C0 /* ALL_BUILD */,
+				948B2E558F2E492A8DF86021 /* ZERO_CHECK */,
+				B0B67E2CE4FF44EC94796CDF /* GLFW3 */,
+				5E6CACEE9B724B75B377AB72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E836DDE10C4646A88F0BB9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6F1FC9E43544FA59214015F /* glad.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		2B2BE470959F467582F2E007 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				18E836DDE10C4646A88F0BB9 /* Header Files */,
+				42BA81B9C7E8436D843E0FCD /* Source Files */,
+				35CDAA6B9C91433FA768C49F /* CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		36B501F27CCE4B3CA80E4D65 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		42BA81B9C7E8436D843E0FCD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CD40FA6A8444C4BB4D7E8B5 /* glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5E6CACEE9B724B75B377AB72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C9B6F2AE834467FB4E2A295 /* color */,
+				16B344406BE844A4BE482A08 /* libglad.a */,
+				1219B2E3EEB848008DD636D0 /* libglfw3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D745A219F2A4CEAAEF25B86 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				D72C8D33C26145128103454B /* Source Files */,
+				0B5BFE560B6649AD98E9F4FF /* Header Files */,
+				B8AB8EAAB23248A9A67BFDD9 /* Resources */,
+				876EC02E2CB240088E00E859 /* CMakeLists.txt */,
+				34B4BDE73BA14E0B90848A9E /* fshader.glsl */,
+				085375041881483DAF7D46BE /* vshader.glsl */,
+			);
+			name = color;
+			sourceTree = "<group>";
+		};
+		8B23C2BF56FE4AFCA43CC4C0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				36B501F27CCE4B3CA80E4D65 /* CMake Rules */,
+				CF34B3DD7EE34E659DD44EFA /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		948B2E558F2E492A8DF86021 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				BBA56D0A847D497C8937AF92 /* CMake Rules */,
+				CF6591CB2BAB41E4AFE2BBA4 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		98A554C834A04731B92E15CA /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				B018C219D24B48FCBCD07B15 /* Source Files */,
+				BA167963D9364FAC89B6F48A /* Header Files */,
+				6E42E39A98764429BE069F20 /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		B018C219D24B48FCBCD07B15 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E24D30E65148476B9C31175E /* cocoa_init.m */,
+				0225045AFD4740B3AE9BD791 /* cocoa_joystick.m */,
+				5C737373EE374E97A2FEA75F /* cocoa_monitor.m */,
+				95B51A2B0DD24BF59F175F10 /* cocoa_time.c */,
+				4998D52E4CAF4D10AF1EBB8F /* cocoa_window.m */,
+				7B3E748B42DA44C983477DA2 /* context.c */,
+				FA83D1F1A646458EA2A55E20 /* init.c */,
+				DE774B8339424EEFAFB759BF /* input.c */,
+				6D5567333475460AB567493A /* monitor.c */,
+				BB236287A8204E648CF38D22 /* nsgl_context.m */,
+				0CAE69DE10324AD5B48D6E7F /* posix_tls.c */,
+				7723CC2EBC8A40DC98A0593B /* vulkan.c */,
+				0B3C025C735B432EA192FDC5 /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B0B67E2CE4FF44EC94796CDF /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				98A554C834A04731B92E15CA /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		B8AB8EAAB23248A9A67BFDD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C7CDDC26D4C14A08558ED /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BA167963D9364FAC89B6F48A /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFA4A2685E5C4B63A9022ED2 /* glfw_config.h */,
+				61E52A9AE56F43D6A706B584 /* glfw3.h */,
+				6D4A54D6CDE24D3B99376D10 /* glfw3native.h */,
+				29FC0CB4691C42F0BB19EFC5 /* cocoa_joystick.h */,
+				C96792819A6F4103B818909A /* cocoa_platform.h */,
+				B59A8AA30CC6475494545EA2 /* internal.h */,
+				A92D7280C478452F8E0048D1 /* nsgl_context.h */,
+				56A3255C919F4906B4458392 /* posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		BBA56D0A847D497C8937AF92 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D72C8D33C26145128103454B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				535B89B606B1427FAD05FA89 /* color.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A975E7E740A45DE93660751 /* color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64F0B458D70D42F0A6483846 /* Build configuration list for PBXNativeTarget "color" */;
+			buildPhases = (
+				FAEB6C4EDC1D4825A420CDD7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26114CC41109484ABA4CC668 /* PBXTargetDependency */,
+				E322624F283B4AF68E9F7FFD /* PBXTargetDependency */,
+				6883A453C07D4248B05C159E /* PBXTargetDependency */,
+			);
+			name = color;
+			productName = color;
+			productReference = 1C9B6F2AE834467FB4E2A295 /* color */;
+			productType = "com.apple.product-type.application";
+		};
+		A5ADDD4890594B719CEFF4CA /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0AC5853ECF45EDB52267E9 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				87B97CB80C4C4269A00379A1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E443F24891BF462186739309 /* PBXTargetDependency */,
+				9ED59AB905254E5C949B0EE1 /* PBXTargetDependency */,
+			);
+			name = glad;
+			productName = glad;
+			productReference = 16B344406BE844A4BE482A08 /* libglad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C61E86F0C57045E28245C204 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632001AD73484BC1A6490E8D /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				E52B0AD5D6294A08BF90AF93 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 1219B2E3EEB848008DD636D0 /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2178C00BAED54605BA24EFAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0900;
+			};
+			buildConfigurationList = F2E4F7D599A04DD8BBCA65B8 /* Build configuration list for PBXProject "captone_shapes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0CDEAD4B64A2408681E25A52;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				29D82A8855804972BE216F6B /* ALL_BUILD */,
+				864C1B0B382A4184B16298D1 /* ZERO_CHECK */,
+				5A975E7E740A45DE93660751 /* color */,
+				A5ADDD4890594B719CEFF4CA /* glad */,
+				C61E86F0C57045E28245C204 /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B4CC10A82D2411B8C29188B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rickidicristoforo/capstone/build -f /Users/rickidicristoforo/capstone/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6C8FCB2344CF4C3D933855C4 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/rickidicristoforo/capstone/build -f /Users/rickidicristoforo/capstone/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87B97CB80C4C4269A00379A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2286AB07179D4E48A0E8F267 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52B0AD5D6294A08BF90AF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C2E81FE9614F4AAA5CB93C /* cocoa_init.m in Sources */,
+				180C6B2A9E534EC1A134C4FE /* cocoa_joystick.m in Sources */,
+				F16B1C301D8F4B49B676DE03 /* cocoa_monitor.m in Sources */,
+				F8DAAB36989A4BBE972172AE /* cocoa_time.c in Sources */,
+				E1F261690FE4437C81E5C26C /* cocoa_window.m in Sources */,
+				D2AEDE6D6EFF425A80CA8DEB /* context.c in Sources */,
+				7E28E6CFB8494A56943AF27E /* init.c in Sources */,
+				C5722406D16D4801A4914752 /* input.c in Sources */,
+				E565C25B2045410FAE54EC2D /* monitor.c in Sources */,
+				749E5EF0B6664D3DAC04C503 /* nsgl_context.m in Sources */,
+				8CB348E0292B450CACA4FBD9 /* posix_tls.c in Sources */,
+				22F333BE49434789901BA1A7 /* vulkan.c in Sources */,
+				79D43E34FCC34B7386FEC785 /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEB6C4EDC1D4825A420CDD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F25D7660BEB47739C5C518E /* color.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		120A42EF72C3416288D10FDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5ADDD4890594B719CEFF4CA /* glad */;
+			targetProxy = 63D39389A01A4F3AB2BE1597 /* PBXContainerItemProxy */;
+		};
+		252FA847FE8245CA84418838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 864C1B0B382A4184B16298D1 /* ZERO_CHECK */;
+			targetProxy = AAC2E100A58546B1B90672D8 /* PBXContainerItemProxy */;
+		};
+		26114CC41109484ABA4CC668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5ADDD4890594B719CEFF4CA /* glad */;
+			targetProxy = E90125012D2B4578AB6F30D3 /* PBXContainerItemProxy */;
+		};
+		3E3166E1E9E04C82AB34A0B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A975E7E740A45DE93660751 /* color */;
+			targetProxy = 8ABFAED0DA854306B9A7C3F6 /* PBXContainerItemProxy */;
+		};
+		6883A453C07D4248B05C159E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 864C1B0B382A4184B16298D1 /* ZERO_CHECK */;
+			targetProxy = 9D72F2123BBF4B46BE74B84E /* PBXContainerItemProxy */;
+		};
+		6E0A887C0BDB4217ADCC8714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C61E86F0C57045E28245C204 /* glfw */;
+			targetProxy = 939D74659E854CCBA665C4FC /* PBXContainerItemProxy */;
+		};
+		9ED59AB905254E5C949B0EE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 864C1B0B382A4184B16298D1 /* ZERO_CHECK */;
+			targetProxy = D36F821E0DEA44B1AE860362 /* PBXContainerItemProxy */;
+		};
+		E322624F283B4AF68E9F7FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C61E86F0C57045E28245C204 /* glfw */;
+			targetProxy = 02A5AC9A726D44F885A5A309 /* PBXContainerItemProxy */;
+		};
+		E443F24891BF462186739309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C61E86F0C57045E28245C204 /* glfw */;
+			targetProxy = 20170D8A45A94C97800BCB46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03428B0C08ED44B681A12905 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INFOPLIST_FILE = /Users/rickidicristoforo/capstone/build/CMakeFiles/color.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/MinSizeRel/libglfw3.a",
+					/Users/rickidicristoforo/capstone/build/MinSizeRel/libglad.a,
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/MinSizeRel/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = color;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		07A09AEB42114A3982CC2593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		34F131E8AFEB4BD7B97E012C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		39C3307405BB4E1D8A5A154A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3D0A8C4CC30A4616BD963F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		425B38F84F1E4FBD9175159B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		467B93C19F454B97AF34428F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INFOPLIST_FILE = /Users/rickidicristoforo/capstone/build/CMakeFiles/color.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/Debug/libglfw3.a",
+					/Users/rickidicristoforo/capstone/build/Debug/libglad.a,
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/Debug/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = color;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		4F8FB94D513D4F6B95C1185D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rickidicristoforo/capstone/build/build;
+			};
+			name = Debug;
+		};
+		53D45B20C8374D7488F354A2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5DC3C58CAAE6425683C2B489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6425F53EF831499382E0EF2B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		725B22E233A649F5A19BE621 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INFOPLIST_FILE = /Users/rickidicristoforo/capstone/build/CMakeFiles/color.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a",
+					/Users/rickidicristoforo/capstone/build/RelWithDebInfo/libglad.a,
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = color;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		73BCD49B48AA49D7ABED27F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+					"/Users/rickidicristoforo/capstone/glfw-3.2/src",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rickidicristoforo/capstone/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		79AD3314EACD4A0CB63D3C84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		87E4638A8FD5435F8620B62B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		87F23E1E7A544A54AC8675FB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+					"/Users/rickidicristoforo/capstone/glfw-3.2/src",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rickidicristoforo/capstone/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9293680BE5D74074AFAB7F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INFOPLIST_FILE = /Users/rickidicristoforo/capstone/build/CMakeFiles/color.dir/Info.plist;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/Release/libglfw3.a",
+					/Users/rickidicristoforo/capstone/build/Release/libglad.a,
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src/Release/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = color;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		9F31EAE29AD04CB0A1C69673 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rickidicristoforo/capstone/build/build;
+			};
+			name = MinSizeRel;
+		};
+		AD465BB30B164CFB927BB054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B6F36D111C7442C0AA8A930E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rickidicristoforo/capstone/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		BECA59E569D645F489F7524E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+					"/Users/rickidicristoforo/capstone/glfw-3.2/src",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rickidicristoforo/capstone/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CBB3EE461C4540FBAD54028C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/deps",
+					/Users/rickidicristoforo/capstone/src,
+					/Users/rickidicristoforo/capstone/shaders,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/rickidicristoforo/capstone/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		D96CA4645363420CAE2F8398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/rickidicristoforo/capstone/build/build;
+			};
+			name = Release;
+		};
+		E6978D1D4D2E4AA58A1DADCF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rickidicristoforo/capstone/glfw-3.2/include",
+					"/Users/rickidicristoforo/capstone/glfw-3.2/src",
+					"/Users/rickidicristoforo/capstone/build/glfw-3.2/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/rickidicristoforo/capstone/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C0AC5853ECF45EDB52267E9 /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD465BB30B164CFB927BB054 /* Debug */,
+				79AD3314EACD4A0CB63D3C84 /* Release */,
+				425B38F84F1E4FBD9175159B /* MinSizeRel */,
+				34F131E8AFEB4BD7B97E012C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3761586CA8D24A4ABA68EF61 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A09AEB42114A3982CC2593 /* Debug */,
+				5DC3C58CAAE6425683C2B489 /* Release */,
+				53D45B20C8374D7488F354A2 /* MinSizeRel */,
+				6425F53EF831499382E0EF2B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		632001AD73484BC1A6490E8D /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BCD49B48AA49D7ABED27F5 /* Debug */,
+				BECA59E569D645F489F7524E /* Release */,
+				87F23E1E7A544A54AC8675FB /* MinSizeRel */,
+				E6978D1D4D2E4AA58A1DADCF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		64F0B458D70D42F0A6483846 /* Build configuration list for PBXNativeTarget "color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				467B93C19F454B97AF34428F /* Debug */,
+				9293680BE5D74074AFAB7F95 /* Release */,
+				03428B0C08ED44B681A12905 /* MinSizeRel */,
+				725B22E233A649F5A19BE621 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7910E93D12EA41DCB285E8DC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB3EE461C4540FBAD54028C /* Debug */,
+				3D0A8C4CC30A4616BD963F33 /* Release */,
+				87E4638A8FD5435F8620B62B /* MinSizeRel */,
+				39C3307405BB4E1D8A5A154A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F2E4F7D599A04DD8BBCA65B8 /* Build configuration list for PBXProject "captone_shapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F8FB94D513D4F6B95C1185D /* Debug */,
+				D96CA4645363420CAE2F8398 /* Release */,
+				9F31EAE29AD04CB0A1C69673 /* MinSizeRel */,
+				B6F36D111C7442C0AA8A930E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2178C00BAED54605BA24EFAF /* Project object */;
+}
